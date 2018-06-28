@@ -36,4 +36,8 @@ class Transfer
       @status = "reversed"
     end 
   end 
+  
+  def not_enough_funds
+    
+  end 
 end
