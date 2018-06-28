@@ -21,6 +21,8 @@ class Transfer
       @sender.withdrawl(@amount)
       @receiver.deposit(@amount)
       @status = "complete"
+    else 
+      @status = "rejected"
     end 
   end 
 end
