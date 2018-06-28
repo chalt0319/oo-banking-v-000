@@ -11,7 +11,9 @@ class Transfer
   def valid? 
     if @sender.valid? == true && receiver.valid? == true 
       true 
-    else false 
+    else 
+      false 
     end 
   end 
+  
 end
