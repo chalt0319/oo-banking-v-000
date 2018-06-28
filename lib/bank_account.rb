@@ -12,4 +12,8 @@ class BankAccount
     currency = money.to_i 
     @balance += currency
   end 
+  
+  def display_balance 
+    @balance
+  end 
 end
