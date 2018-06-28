@@ -18,7 +18,7 @@ class Transfer
   end 
   
   def execute_transaction
-    if self.valid? == true && @status == "pending"
+    if self.valid? == true && @status == "pending" && self.not_enough_funds == true 
       @sender.withdrawl(@amount)
       @receiver.deposit(@amount)
       @status = "complete"
@@ -38,6 +38,10 @@ class Transfer
   end 
   
   def not_enough_funds
-    
+    if @sender.your_balance < @amount 
+      false 
+    else
+      true 
+    end 
   end 
 end
