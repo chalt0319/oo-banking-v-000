@@ -27,6 +27,6 @@ class Transfer
       @status = "complete"
     end 
     @status
-    end 
   end 
+  
 end
