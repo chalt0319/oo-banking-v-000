@@ -35,4 +35,8 @@ class BankAccount
     @status 
   end 
   
+  def your_balance
+    @balance 
+  end 
+    
 end
