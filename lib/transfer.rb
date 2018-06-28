@@ -20,5 +20,6 @@ class Transfer
     if self.valid? == true 
       @sender.withdrawl(@amount)
       @receiver.deposit(@amount)
+    end 
   end 
 end
